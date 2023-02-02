@@ -1,0 +1,241 @@
+:root{
+    --firstcolor:#10f74e;
+    --secondarycolor:#0e4666;
+    --lightcolor:#ffffff;
+    --bgcolor-1:#171a1c;
+    --bgcolor-2:#22282a;
+    --padding: 4%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    color: var(--lightcolor);
+
+}
+
+body{
+    background-image: linear-gradient(to bottom, #6f9ff9, #65a4fb, #5ba8fd, #51adfe, #46b1ff, #42b5ff, #40b8ff, #3fbcfe, #46c1fd, #4ec5fd, #56cafc, #5fcefb);}
+
+.home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* the part one */
+
+
+
+nav h2{
+    font-size: 2.3rem;
+    letter-spacing: 0.13rem;
+    cursor: pointer;
+}
+
+span{
+    color: var(--firstcolor);
+}
+
+nav{
+    padding: 1rem var(--padding); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+
+nav ul li a{
+    color: var(--lightcolor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+nav ul li a:hover{
+    color: var(--firstcolor);
+
+}
+
+.sub{
+    background:var(--firstcolor);
+    color:var(--lightcolor);
+    text-decoration: none;
+    font-weight: bold;
+    padding:0.81rem 1.87rem ;
+    border-radius: 30px;
+    transition: 0.4s;
+    border: 2px solid transparent;
+}
+.sub:hover{
+    background:var(--lightcolor);
+    color: var(--firstcolor);
+    border: 2px solid var(--firstcolor);
+}
+
+/* the part two */
+
+.page1{  
+    width: 100%;
+    padding: 0 var(--padding);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.page1 h4{
+    font-size: 1.25rem;
+    letter-spacing: 0.15rem;
+}
+
+.page1 h1{
+    font-size: 3.0rem;
+    margin: 1.7rem 0;
+}
+
+.page1 h3{
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+/* the part three */
+
+.page2{
+    padding: 0 var(--padding);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.all{
+    margin:20px Auto;
+}
+
+.page2 h1{
+    font-size: 40px;
+}
+
+.page2 .page1_2{
+    display:inherit;
+}
+.page2 img{
+    width: 50%;
+}
+
+/* the part four */
+
+.page3{
+    padding: 0 var(--padding);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page3 h1{
+    font-size: 40px;
+}
+
+.page3 .photos{
+    display:flex;
+    flex-wrap: wrap;
+}
+.page3 img{
+    width:calc(95%/3);
+    margin: 2% 0.8%;
+    height: calc(95%/3);
+}
+
+/* the part five */
+
+.page4{
+    padding: 0 var(--padding);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.part1{
+    width: 40%;
+}
+
+.part1 h1{
+    font-size: 60px;
+    margin: 25px 0;
+} 
+
+.part2{
+    width: 60%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+.part2 div{
+    width: 50%;
+    margin:45px 0;
+}
+
+.part2 h2{
+    font-size: 32px;
+    margin-bottom:5% ;
+}
+
+/* the part six */
+
+.page5{
+    padding: 0 var(--padding);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.page5 h1{
+    font-size: 40px;
+}
+
+.page5 .page1_2{
+    display:inherit;
+}
+.page5 img{
+    width: 50%;
+}
+
+.page6{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.social{
+    margin-top:3rem;
+}
+
+.social img{
+    margin-right: 2rem;
+    width: 2.5rem;
+    transition: 0.4s;
+}
+
+.social img:hover{
+    transform: scale(1.3);
+}

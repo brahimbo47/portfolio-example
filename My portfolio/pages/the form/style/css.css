@@ -1,0 +1,92 @@
+:root{
+    --color1:#709be9;
+    --color2:#f71059;
+    --color3:#ffffff;
+    --color4:#eee;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-image: radial-gradient(circle, #00bdff, #33c0ff, #49c3ff, #5ac6ff, #68c9ff);
+}
+
+.all{
+    width: 100%;
+}
+
+form{
+    background-color:var(--color2);
+    width: 50%;
+    margin:5% auto;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+h2{
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+    color:var(--color3);
+}
+
+content{
+    background-color:var(--color1);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 20px 30px;
+    border-bottom-left-radius: 10%;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.name div{
+    width: 48%;
+}
+
+form div{
+    margin-top:2% ;
+    
+} 
+
+form div div{
+    width: 50%;
+}
+
+input{
+    background-color: var(--color4);
+    border: 2px solid var(--color2);
+    width: 100%;
+    height: 35px;
+    margin-top: 2%;
+    border-radius:  12px;
+    padding: 10px;
+}
+
+label{
+    color: var(--color3);
+}
+
+button{
+    width: 40%;
+    background-color: var(--color2);
+    color: var(--color3);
+    border: 2px solid var(--color2);
+    border-radius:  20px;
+    padding: 10px ;
+    transition:0.4s;
+}
+button:hover{
+    color: var(--color2);
+    background-color: var(--color3);
+}
